@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>N Clock</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="time-display" id="clockDisplay"></div>
+  <div class="stopwatch-display" id="stopwatchDisplay" style="display:none;">00:00:00.0</div>
+  <div id="alarmSection" style="display:none;">
+    <button class="add-alarm-btn" id="addAlarmBtn">＋ アラーム追加</button>
+    <ul id="alarmList"></ul>
+  </div>
+</div>
+
+<div class="lang-select">
+  <select id="langSelect">
+    <option value="ja">日本語</option>
+    <option value="en">English</option>
+  </select>
+</div>
+
+<div class="controls">
+  <button id="clockBtn" class="active">時計</button>
+  <button id="stopwatchBtn">ストップウォッチ</button>
+  <button id="alarmBtn">アラーム</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
