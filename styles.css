@@ -1,0 +1,91 @@
+body {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.time-display, .stopwatch-display {
+  font-size: 11vw;
+  font-weight: 600;
+  margin-top: 15vh;
+}
+
+.controls {
+  position: absolute;
+  bottom: 5vh;
+  width: 100%;
+}
+
+.controls button {
+  font-size: 4.5vw;
+  background: none;
+  color: #888;
+  border: none;
+  margin: 0 2vw;
+  padding: 1vw 2vw;
+}
+
+.controls .active {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+.lang-select {
+  position: absolute;
+  top: 1vh;
+  right: 2vw;
+}
+
+.add-alarm-btn {
+  margin-top: 10vh;
+  font-size: 5vw;
+  padding: 2vw 3vw;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+}
+
+#alarmList {
+  margin-top: 4vh;
+  list-style: none;
+  padding: 0;
+}
+
+.alarm-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 10vw;
+  font-size: 6vw;
+}
+
+.switch {
+  position: relative;
+  width: 55px;
+  height: 32px;
+  background: #555;
+  border-radius: 16px;
+  margin-left: 10px;
+  top: 6px;
+}
+
+.switch-circle {
+  width: 28px;
+  height: 28px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  transition: 0.2s;
+}
+
+.switch.on {
+  background: #0f0;
+}
+
+.switch.on .switch-circle {
+  left: 25px;
+}
